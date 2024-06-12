@@ -7,5 +7,10 @@ namespace CalculadoraMAUI
             InitializeComponent();
             ResultadoLabel.Text = $"El resultado es: {resultado}";
         }
+
+        private async void OnRegresarClicked(object sender, EventArgs e)
+        {
+            await Navigation.PopAsync();
+        }
     }
 }

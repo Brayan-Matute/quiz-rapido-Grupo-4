@@ -1,8 +1,29 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="CalculadoraMAUI.ResultPage">
-    <VerticalStackLayout Padding="10">
-        <Label x:Name="ResultadoLabel" Text="Resultado" FontSize="Large"/>
+             x:Class="CalculadoraMAUI.ResultPage"
+             BackgroundColor="#f0f0f5">
+
+    <VerticalStackLayout Padding="20" Spacing="20" VerticalOptions="CenterAndExpand">
+        <Label Text="Resultado" 
+               FontSize="32" 
+               HorizontalOptions="Center" 
+               TextColor="#333"/>
+
+        <Frame Padding="20" BackgroundColor="#ffffff" CornerRadius="10" HasShadow="True">
+            <Label x:Name="ResultadoLabel" 
+                   FontSize="24" 
+                   TextColor="#333" 
+                   HorizontalOptions="Center" 
+                   VerticalOptions="CenterAndExpand"/>
+        </Frame>
+
+        <Button Text="Regresar" 
+                Clicked="OnRegresarClicked" 
+                BackgroundColor="#29b6f6" 
+                TextColor="White" 
+                CornerRadius="5"
+                HorizontalOptions="Center"/>
     </VerticalStackLayout>
+
 </ContentPage>
